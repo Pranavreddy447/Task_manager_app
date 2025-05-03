@@ -1,0 +1,19 @@
+# Ignore Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Django specific
+db.sqlite3
+
+# Environment files
+.env
+
+# Node modules (for frontend)
+node_modules/
+
+# React build output
+build/
+dist/
