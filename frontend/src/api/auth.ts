@@ -12,13 +12,14 @@ export const login = async (email: string, password: string) => {
   return response.data;
 };
 
-export const register = async (email: string, password: string) => {
-  return await axiosInstance.post("auth/register/", { email, password });
+export const registration = async (email: string, password: string) => {
+  return await axiosInstance.post("auth/register/", { username: email, email, password });
 };
 
 export const logout = () => {
   localStorage.removeItem("accessToken");
   localStorage.removeItem("refreshToken");
+  window.location.href = "/login"; // Redirect to login page after logout
 };
 
 export const refreshToken = async (refresh: string) => {

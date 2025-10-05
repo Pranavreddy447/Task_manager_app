@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f4f7;
+}
+
+.primary-text {
+    background: #7115bd;
+    background: linear-gradient(90deg, rgba(113, 21, 189, 0.7) 48%, rgba(178, 119, 217, 1) 100%);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;         /* for Firefox */
+    color: transparent;            /* fallback */
+}
+
+.primary-color {
+    background: #7115bd;
+    background: linear-gradient(90deg, rgba(113, 21, 189, 0.7) 48%, rgba(178, 119, 217, 1) 100%);
+}

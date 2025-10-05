@@ -17,3 +17,7 @@ node_modules/
 # React build output
 build/
 dist/
+
+gpr_git
+gpr_git.pub
+.idea/
